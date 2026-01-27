@@ -12,6 +12,15 @@
     <main>
       <div>
         <h2>Contact Information</h2>
+        <label> Name:
+          <input required type="text" name="name" />
+        </label><br>
+        <label> Number:
+          <input required type="number" name="number" />
+        </label><br>
+        <label> Email:
+          <input required type="email" name="email" />
+        </label><br>
       </div>
       <div>
         <h2>Select Pizza Size</h2>
