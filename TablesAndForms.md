@@ -24,6 +24,14 @@
       </div>
       <div>
         <h2>Select Pizza Size</h2>
+        <label>Pizza Size:
+          <select>
+            <option value="">--Select Size--</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="XLarge">XLarge</option>
+          </select>
+        </label>
       </div>
       <div>
         <h2>Select Sauce</h2>
