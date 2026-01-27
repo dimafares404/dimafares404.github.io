@@ -44,7 +44,7 @@
   <h2>Projects</h2>
   <ul>
     <li>
-      <a href="project1.html">TakeOut (Java Application)</a> — Console-based Java program simulating a restaurant ordering system.
+      <a href="project1.html">Mage (Java Application)</a> — Console-based Java program simulating potion creation.
     </li>
     <li>
       <a href="project2.html">Comets (Java Simulation Program)</a> — Java program modeling comet movement and interactions using object-oriented design.
