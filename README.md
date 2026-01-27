@@ -12,7 +12,7 @@
       <h1>Dima Fares</h1>
       <p>
         Email: di928511@ucf.edu
-        LinkedIn: <a href="https://www.linkedin.com/in/dimafares404/">https://www.linkedin.com/in/dimafares404/</a>
+        LinkedIn: <a href="https://www.linkedin.com/in/dimafares404/" target="_blank">https://www.linkedin.com/in/dimafares404/</a>
       </p>
     </header>
     <main>
