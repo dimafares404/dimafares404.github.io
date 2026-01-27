@@ -44,10 +44,10 @@
   <h2>Projects</h2>
   <ul>
     <li>
-      <a href="project1.html">Mage (Java Application)</a> — Console-based Java program simulating potion creation.
+      <a href="https://dimafares404.github.io/project1.html" target="_blank">Mage (Java Application)</a> — Console-based Java program simulating potion creation.
     </li>
     <li>
-      <a href="project2.html">Comets (Java Simulation Program)</a> — Java program modeling comet movement and interactions using object-oriented design.
+      <a href="https://dimafares404.github.io/project2.html" target="_blank">Comets (Java Simulation Program)</a> — Java program modeling comet movement and interactions using object-oriented design.
     </li>
   </ul>
 </section>
