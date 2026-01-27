@@ -35,12 +35,24 @@
       </div>
       <div>
         <h2>Select Sauce</h2>
+        <input type="radio"> <label>Marinara</label><br>
+        <input type="radio"> <label>Ranch</label><br>
+        <input type="radio"> <label>No Sauce</label><br>
       </div>
       <div>
         <h2>Select Toppings</h2>
+          <input type="Checkbox"> <label>Pepperoni</label><br>
+          <input type="Checkbox"> <label>Mushroom</label><br>
+          <input type="Checkbox"> <label>Sausage</label><br>
+          <input type="Checkbox"> <label>Pineapple</label><br>
+          <input type="Checkbox"> <label>Peppers</label><br>
+          <input type="Checkbox"> <label>Onions</label><br>
+
       </div>
       <div>
         <h2>Additional Instructions</h2>
+        <input type="textbox">
+        <input type="submit">
       </div>
       <div>
         <p>List of My Favorite Games</p>
