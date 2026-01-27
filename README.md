@@ -41,13 +41,16 @@
         </ul>
       </section>
       <section>
-        <h2>Projects</h2>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <a href="project1.html">TakeOut (Java Application)</a> — Console-based Java program simulating a restaurant ordering system.
+    </li>
+    <li>
+      <a href="project2.html">Comets (Java Simulation Program)</a> — Java program modeling comet movement and interactions using object-oriented design.
+    </li>
+  </ul>
+</section>
       <section>
         <h2>Skills</h2>
         <ul>
