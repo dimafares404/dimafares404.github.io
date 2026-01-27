@@ -47,7 +47,6 @@
           <input type="Checkbox"> <label>Pineapple</label><br>
           <input type="Checkbox"> <label>Peppers</label><br>
           <input type="Checkbox"> <label>Onions</label><br>
-
       </div>
       <div>
         <h2>Additional Instructions</h2>
