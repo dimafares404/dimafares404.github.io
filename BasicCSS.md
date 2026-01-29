@@ -33,6 +33,32 @@
       <h3>Common HTML Tags</h3>
       <p><a href="https://www.w3schools.com/">W3schools.com</a> has a great resource for HTML, CSS, and JavaScript!</p>
 <!--Tag and description table-->
+      <table>
+        <tr>
+          <th>Tag</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Table</td>
+          <td>Root for tabular data to be displayed on the page.</td>
+        </tr>
+        <tr>
+          <td>p</td>
+          <td>Defines a paragraph. Considered a block element.</td>
+        </tr>
+        <tr>
+          <td>a</td>
+          <td>"Anchor", or link. Lets users navigate to another page.</td>
+        </tr>
+        <tr>
+          <td>strong</td>
+          <td>Indicates how the text should have a strong inflection. By default, applies bold to the text.</td>
+        </tr>
+        <tr>
+          <td>img</td>
+          <td>Adds an image to the page. Uses the "src" attribute to specify the location of the resource.</td>
+        </tr>
+      </table>
     </main>
   </body>
 </html>
