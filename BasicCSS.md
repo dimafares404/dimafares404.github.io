@@ -32,7 +32,6 @@
       </ol>
     <h3>Common HTML Tags</h3>
     <p><a href="https://www.w3schools.com/">W3schools.com</a> has a great resource for HTML, CSS, and JavaScript!</p>
-
 <!--Tag and description table-->
     </main>
   </body>
