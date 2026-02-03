@@ -11,9 +11,13 @@ h1 {
   border: 3px solid green;
 }
 
-.blue-background {
+.blue_background {
   background: blue;
   color: white;
+}
+
+#last_link {
+  color: purple;
 }
 
 th {
