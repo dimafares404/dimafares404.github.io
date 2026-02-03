@@ -6,22 +6,22 @@ h1 {
   text-align: center;
 }
 
-#white_background {
-  background: white;
-  border: 3px solid green;
+#paragraph2 {
+  background-color: white;
+  border: solid green 2px;
 }
 
-.blue_background {
+.blue {
   background: blue;
   color: white;
 }
 
-#last_link {
+a:last-of-type {
   color: purple;
 }
 
 th {
-  background: light-grey;
+  background: grey;
 }
 
 td {
