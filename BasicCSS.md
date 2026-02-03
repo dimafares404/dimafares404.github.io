@@ -32,7 +32,7 @@
         <li><a>Item 5</a></li>
       </ol>
       <h3>Common HTML Tags</h3>
-      <p><a href="https://www.w3schools.com/">W3schools.com</a> has a great resource for HTML, CSS, and JavaScript!</p>
+      <p><a href="https://www.w3schools.com/" id="last_link" >W3schools.com</a> has a great resource for HTML, CSS, and JavaScript!</p>
 <!--Tag and description table-->
       <table>
         <tr>
