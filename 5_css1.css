@@ -1,29 +1,91 @@
-body {
-  background: light-blue;
+body{
+  margin: 0;
+  background: lightblue;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
 }
 
-h1 {
+h1{
   text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  margin: 20px 0 15px;
 }
 
-#paragraph2 {
-  background-color: white;
-  border: solid green 2px;
+article{
+  margin: 0 30px 30px;
 }
 
-.blue {
-  background: blue;
-  color: white;
+h2{
+  font-size: 30px;
+  font-weight: 750;
+  margin: 10px 0 10px;
 }
 
-a:last-of-type {
-  color: purple;
+h3{
+  font-size: 15px;
+  font-weight: 700;
+  margin: 14px 0 8px;
 }
 
-th {
-  background: grey;
+p{
+  font-size: 12px;
+  margin: 0 0 12px;
 }
 
-td {
+#paragraph2{
   background: white;
+  border: 3px solid green;
+  padding: 10px 15px;
+  width: 75%;
+  margin: 10px auto 15px;
+}
+
+p.blue{
+  background: darkblue;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 0 10px;
+}
+
+a{
+  color: blue;
+}
+
+ol{
+  margin: 6px 0 18px;
+  padding: 0;
+  list-style: none;
+  counter-reset: item;
+}
+ol li{
+  font-size: 12px;
+  margin: 2px 0;
+}
+ol li::before{
+  counter-increment: item;
+  content: counter(item, decimal-leading-zero) ". ";
+}
+
+table{
+  border-collapse: collapse;
+  background: white;
+  font-size: 11px;
+  width: 360px;
+}
+
+th, td{
+  border: 1px solid black;
+  padding: 4px 6px;
+  vertical-align: top;
+}
+
+th{
+  background: lightgrey;
+  font-weight: 800;
+  text-align: left;
+}
+
+a:last-of-type{
+  color: purple;
 }
