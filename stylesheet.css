@@ -1,1 +1,25 @@
+body {
+  background: light-blue;
+}
 
+h1 {
+  text-align: center;
+}
+
+#white_background {
+  background: white;
+  border: 3px solid green;
+}
+
+.blue-background {
+  background: blue;
+  color: white;
+}
+
+th {
+  background: light-grey;
+}
+
+td {
+  background: white;
+}
