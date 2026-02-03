@@ -12,14 +12,14 @@
     <main>
       <h2>Paragraphs</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget augue felis. Pellentesque at magna ut elit suscipit tincidunt et quis magna. Sed eu feugiat orci. Aenean posuere nunc a ornare scelerisque. Pellentesque varius metus in diam vestibulum consequat a id metus. Etiam non semper nibh. Praesent quis porttitor risus. Pellentesque maximus lorem id varius tincidunt. Proin viverra purus mollis turpis molestie, in pulvinar elit auctor. Morbi libero massa, aliquam convallis nisi id, mattis vehicula magna. Nullam libero nunc, molestie a tempor ut, scelerisque sed diam. Nunc tristique consectetur mollis. Nulla venenatis mi massa, sit amet accumsan risus iaculis sed. Phasellus porta sapien at eros rhoncus, ut accumsan est tincidunt.</p>
-      <div>
+      <div id="white_background">
         <p>Donec maximus lectus sed ipsum varius ornare. Cras tincidunt lacus sit amet leo viverra, quis bibendum tortor posuere. Etiam a neque non nunc gravida convallis ac eu justo. Nunc dignissim, purus ac dapibus egestas, mauris felis eleifend enim, ac sollicitudin turpis est eu quam. Phasellus sed suscipit nunc. Praesent lobortis mattis rhoncus. Mauris aliquam posuere massa a bibendum</p>
       </div>
       <p>Mauris id mauris convallis, elementum nibh nec, pulvinar enim. Fusce ac nulla enim. Proin efficitur tincidunt ligula, non commodo nibh sodales in. Nunc pretium elementum suscipit. Aenean pellentesque in quam vel ultrices. Mauris eleifend tellus dignissim nunc pretium, sit amet hendrerit metus consequat. Pellentesque ullamcorper nunc eu ultricies faucibus. Morbi vulputate interdum ligula, at consectetur urna consequat a. Cras aliquet, metus a consectetur congue, sem nisi vehicula nulla, at maximus velit nisl ut diam. Quisque placerat dolor at ex mollis, a tristique massa bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus!</p>
-      <div>
+      <div class="blue_background>
         <p>Aliquam erat volutpat. Maecenas consequat sed ante a vehicula. Integer ultricies justo volutpat, convallis erat eu, pellentesque quam. Donec efficitur arcu non porta suscipit. Integer cursus nibh vitae tincidunt aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum lacinia dapibus pharetra. Donec hendrerit, orci non luctus hendrerit, urna ipsum tincidunt erat, quis varius nibh dui non diam</p>
       </div>
-      <div>
+      <div class="blue_background>
         <p>Ut vitae congue nibh, ac faucibus purus. In pulvinar mi id tellus rutrum faucibus. Nunc non massa lorem. Morbi ac arcu nec risus dignissim pretium. Sed in ex dui. Aliquam erat volutpat. Etiam enim eros, pharetra congue gravida eget, bibendum et odio. Integer magna metus, accumsan ut lobortis vitae, eleifend et neque. Sed ut quam mauris. Suspendisse ac ullamcorper nisl. Sed non luctus massa, nec tristique ligula. Vivamus egestas sem euismod lacus eleifend, at fringilla quam mattis. Sed mattis lacus ut rutrum placerat. Fusce finibus lacus in augue pharetra luctus</p>
       </div>
       <h2>Lists, Links, and Tables</h2>
