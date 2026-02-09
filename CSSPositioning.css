@@ -7,7 +7,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 10%;
+  width: 12%;
   height: 100%;
   background: #d7a12a;
   padding: 20px 15px;
@@ -31,7 +31,7 @@ header {
   position: fixed;
   top: 0;
   left: 15%;
-  width: 90%;
+  width: 88%;
   background: red;
   padding: 18px 0 0 0;
   border-bottom: 6px solid black;
@@ -53,8 +53,8 @@ header nav {
 header button {
   background: blue;
   color: white;
-  border: 3px solid black;
-  padding: 0px 26px;
+  border: 1px solid black;
+  padding: 5px 26px;
   font-size: 20px;
   margin: 0 16px;
 }
