@@ -99,6 +99,7 @@ article p {
 
   padding: 15px 18px;
   font-size: 28px;
+  z-index: 999;
 }
 
 footer {
