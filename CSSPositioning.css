@@ -108,3 +108,36 @@ article p {
   font-size: 36px;
   font-family: Georgia, serif;
 }
+
+#jumpMenu {
+  width: 13%;      /* thinner than 15% */
+}
+
+main {
+  margin-left: 13%;  /* MUST match jump menu width */
+}
+
+header {
+  left: 13%;
+  width: 87%;
+}
+
+header {
+  padding-bottom: 0;
+}
+
+header nav {
+  display: block;
+  width: 100%;
+  margin: 10px 0 0 0;     /* no bottom margin */
+  padding: 10px 0;        /* black strip thickness */
+  background: black;
+}
+
+#thanks {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0; 
+  z-index: 9999;
+}
