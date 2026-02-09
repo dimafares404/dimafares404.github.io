@@ -105,3 +105,26 @@ footer {
   border-top: 5px solid black;
   padding: 20px;
 }
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  padding: 20px;
+  padding-bottom: 160px;   /* space so the "thanks" box doesn't cover text */
+}
+
+#container article {
+  width: 300px;
+  margin: 15px;
+
+  background: white;
+  padding: 15px;
+}
+
+#container article p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
