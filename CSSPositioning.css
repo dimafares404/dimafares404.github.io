@@ -3,69 +3,85 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/*jump menu position left and spans height*/
 #jumpMenu {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 10%;
-  height: 100%;
+  left: 0
+  top: 120px;
+  width: 12%;
+  height: calc(100% - 120px);
   background-color: #d7a12a;
   padding: 15px;
   border-right: 5px solid black;
+  overflow-y: auto;
 }
 
-#jumpMenu a{
+#jumpMenu a {
   display: block;
   margin: 10px 0;
 }
 
 main {
-  margin-left: 10%;
+  margin-left: 12%;
 }
 
 header {
   position: fixed;
   top: 0;
-  left: 10%;
-  width: 85%;
+  left: 12%;
+  width: 88%;
   background-color: red;
+  border-bottom: 5px solid black;
+  padding: 15px 0;
   text-align: center;
-  padding: 10px 0;
+}
+
+header p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 header nav {
-  text-align: center;
   margin-top: 10px;
+}
 
 header button {
   background-color: blue;
   color: white;
   border: 3px solid black;
+
   padding: 10px 18px;
-  margin: 0px 8px;
+  font-size: 18px;
+
+  margin: 0 8px;
 }
 
 h1 {
-  margin-top: 150px;
+  margin-top: 160px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 #container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: wrap;            
+  justify-content: space-evenly;
   padding: 20px 30px;
-  gap: 20px;
+  padding-bottom: 160px;
 }
 
 article {
   width: 300px;
-  margin: 0;
-  padding: 15px;
+  margin: 15px;
   background-color: white;
+  border: 2px solid #dddddd;
+  padding: 15px;
+}
+article h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
 }
 
 article p {
@@ -73,27 +89,19 @@ article p {
   font-size: 14px;
 }
 
-article h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
 #thanks {
   position: fixed;
   bottom: 20px;
   right: 20px;
+
   background-color: lightblue;
-  border: 1px solid black;
+  border: 3px solid black;
+
   padding: 15px 18px;
   font-size: 28px;
-  max-width: 420px;
 }
 
 footer {
-  border-top: 1px solid black;
+  border-top: 5px solid black;
   padding: 20px;
-}
-
-#container {
-  padding-bottom: 140px;
 }
