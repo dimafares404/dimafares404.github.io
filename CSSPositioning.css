@@ -8,7 +8,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 15%;
+  width: 10%;
   height: 100%;
   background-color: #d7a12a;
   padding: 15px;
@@ -21,13 +21,13 @@ body {
 }
 
 main {
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 header {
   position: fixed;
   top: 0;
-  left: 15%;
+  left: 10%;
   width: 85%;
   background-color: red;
   text-align: center;
