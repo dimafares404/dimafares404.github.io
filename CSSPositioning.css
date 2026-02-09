@@ -7,7 +7,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 12%;
+  width: 15%;     
   height: 100%;
   background-color: #d7a12a;
   padding: 20px 15px;
@@ -16,7 +16,7 @@ body {
 
 #jumpMenu h2 {
   margin-top: 0;
-  font-size: 32px;
+  font-size: 34px;
   line-height: 1.1;
 }
 
@@ -29,52 +29,46 @@ body {
 }
 
 main {
-  margin-left: 12%;
+  margin-left: 15%;
 }
 
 header {
   position: fixed;
   top: 0;
-
-  left: 12%;
-  width: 88%;
-
+  left: 15%;
+  width: 85%;
   background-color: red;
   border-bottom: 6px solid black;
-
   text-align: center;
-  padding: 20px 0;
+  padding: 12px 0;
 }
 
 header p {
   margin: 0;
-  font-size: 34px;
+  font-size: 32px;
   font-weight: bold;
 }
 
 header nav {
-  background-color: black;   /* the black strip */
-  padding: 10px 0;
-  margin-top: 15px;
+  background-color: black;
+  padding: 8px 0;      
+  margin-top: 10px;
 }
 
 header button {
   background-color: blue;
   color: white;
-
   border: 3px solid black;
-
   font-size: 20px;
   padding: 12px 25px;
-  margin: 0 15px;
+  margin: 0 18px;
 }
 
 h1 {
-  margin-top: 180px;
-  margin-bottom: 30px;
-
+  margin-top: 170px;
+  margin-bottom: 25px;
   text-align: center;
-  font-size: 60px;
+  font-size: 58px;
   font-family: Georgia, serif;
 }
 
@@ -82,21 +76,20 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
-  padding: 0 30px 140px 30px; 
+  padding: 0 30px 140px 30px;
 }
 
 article {
-  width: 300px;
-  margin: 10px 15px;
-  background: none;
+  width: 300px; 
+  margin: 10px;
   border: none;
+  background: none;
   padding: 0;
 }
 
 article h2 {
   margin: 0 0 10px 0;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 article p {
@@ -109,11 +102,9 @@ article p {
   position: fixed;
   right: 20px;
   bottom: 20px;
-
   background-color: lightblue;
   border: 3px solid black;
-
   padding: 18px 28px;
-  font-size: 40px;
+  font-size: 36px;
   font-family: Georgia, serif;
 }
