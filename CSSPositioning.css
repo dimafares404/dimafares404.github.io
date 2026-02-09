@@ -33,21 +33,23 @@ header {
   left: 15%;
   width: 87%;
   background: red;
-  padding: 18px 0 0 0;
+  padding: 0;
   border-bottom: 6px solid black;
   text-align: center;
 }
 
 header p {
-  margin: 0 0 12px 0;
   font-size: 32px;
   font-weight: bold;
+  margin: 0;
+  padding: 20px 0;
 }
 
 header nav {
   background: black;
   margin: 0;        
   width: 100%;
+  padding: 10px 0;
 }
 
 header button {
@@ -71,17 +73,17 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 0 30px;
   padding-bottom: 170px;
   width: 90%;
+  padding: 0 30px 170px 30px; 
 }
 
 #container article {
   width: 300px;
-  margin: 10px 12px;
   border: none;
   background: none;
-  padding: 0;
+  padding: 0;         
+  margin: 10px;
 }
 
 #container article h2 {
@@ -105,37 +107,5 @@ h1 {
   padding: 18px 20px;
   font-family: Georgia, serif;
   font-size: 25px;
-  z-index: 9999;
-}
-
-header {
-  padding: 0;
-}
-
-header p {
-  margin: 0;
-  padding: 20px 0;   /* red area height */
-}
-
-header nav {
-  margin: 0;
-  padding: 10px 0;   /* black bar height */
-  background: black;
-}
-
-#container {
-  display: flex;
-  flex-wrap: wrap;              
-  justify-content: space-evenly;
-
-  padding: 0 30px 170px 30px; 
-}
-
-#container article {
-  width: 300px;          
-  margin: 10px;
-
-  border: none;
-  background: none;
-  padding: 0;
+  z-index: 99;
 }
