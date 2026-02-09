@@ -5,7 +5,7 @@ body {
 
 #jumpMenu {
   position: fixed;
-  left: 0
+  left: 0;
   top: 120px;
   width: 12%;
   height: calc(100% - 120px);
