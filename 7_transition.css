@@ -152,7 +152,6 @@ h1 {
   font-size: 13px;
 }
 
-/* Add arrow image to links that go to Google */
 a[href*="google.com"]::after {
   content: url("arrowarrow.png");
   margin-left: 6px;
