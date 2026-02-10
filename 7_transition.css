@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -5,17 +9,13 @@ body {
 }
 
 #menuItems {
-  width: 240px;
-  background: black;
-  padding-top: 20px;
   position: fixed;
   top: 0;
   left: 0;
+  width: 240px;
   height: 100vh;
-}
-
-main {
-  margin-left: 240px; /* matches nav width */
+  background: black;
+  padding-top: 15px;
 }
 
 #menuItems button {
@@ -24,7 +24,7 @@ main {
   background: blue;
   color: white;
   border: 1px solid black;
-  padding: 12px 10px;
+  padding: 12px;
   font-size: 18px;
   cursor: pointer;
 }
@@ -37,7 +37,7 @@ main {
   display: none;
   list-style: none;
   margin: 0;
-  padding: 8px 0;
+  padding: 6px 0;
   background: goldenrod;
 }
 
@@ -49,9 +49,10 @@ main {
 #jumpMenu a {
   display: block;
   padding: 2px 12px;
+  font-size: 18px;
+
   color: blue;
   text-decoration: none;
-  font-size: 18px;
 }
 
 #jumpMenu a:hover {
@@ -59,10 +60,14 @@ main {
   color: white;
 }
 
+main {
+  margin-left: 240px; /* space for sidebar */
+}
+
 header {
   background: red;
-  padding: 40px 0;     
   text-align: center;
+  padding: 35px 0;
 }
 
 header p {
@@ -75,37 +80,37 @@ h1 {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
-  margin: 30px 0 20px 0;
+  margin: 30px 0;
 }
 
 #container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  padding: 20px 40px 40px 40px;
+  padding: 25px 40px;
 }
 
 #container article {
-  position: relative;     
-  overflow: hidden;     
-  max-height: 260px;      
-  padding-bottom: 40px; 
-  color: #b3b3b3;
+  position: relative;      
+  overflow: hidden;        
+  max-height: 260px;       
+  padding-bottom: 80px;    
+  color: #b3b3b3;        
   transition: color 2s, max-height 2s;
 }
 
 #container article h2 {
-  color: #b3b3b3;
   margin-top: 0;
+  color: #b3b3b3;
 }
 
 #container article:hover {
-  color: #222;             
-  max-height: 900px;      
+  max-height: 900px;
+  color: #222;
 }
 
 #container article:hover h2 {
-  color: #000;             
+  color: black;
 }
 
 #container article p:first-of-type::first-letter {
@@ -116,9 +121,12 @@ h1 {
 
 #container article a[href*="google.com"] {
   position: absolute;
-  left: 0;
-  bottom: 10px;            
-  display: inline-block;
+  left: 10px;
+  bottom: 20px;
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 #container article a[href*="google.com"]::after {
@@ -131,29 +139,4 @@ h1 {
   background-image: url("arrowarrow.png");
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-a[href*="google.com"]::after {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-left: 8px;
-  vertical-align: -2px;
-  background-image: url("arrowarrow.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#thanks {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-  background: lightblue;
-  border: 1px solid black;
-  padding: 18px 20px;
-  font-family: Georgia, serif;
-  font-size: 25px;
-  z-index: 99;
 }
