@@ -157,15 +157,16 @@ a[href*="google.com"]::after {
 #container article p:last-of-type a::after {
   content: "";
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   margin-left: 6px;
-  vertical-align: middle;
-  background-image: url("images/arrowarrow.png");
+  background-image: url("images/Link-external-small-ltr-progressive.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  vertical-align: text-bottom;
 }
+
 
 #thanks {
   position: fixed;
