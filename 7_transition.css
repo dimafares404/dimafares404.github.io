@@ -89,8 +89,9 @@ h1 {
   display: flex;
   flex-direction: column;
   color: #b3b3b3;          
-  max-height: 260px;       
+  max-height: 300px;       
   overflow: hidden;
+  padding-bottom: 30px;
   transition: color 2s, max-height 2s;
 }
 
@@ -116,7 +117,7 @@ h1 {
 
 #container article a[href*="google.com"] {
   margin-top: auto;      
-  padding-top: 12px;       
+  padding-top: 10px;       
   display: inline-block;
 }
 
@@ -125,7 +126,7 @@ h1 {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-left: 8px;
+  margin-left: 6px;
   vertical-align: -2px;
   background-image: url("arrowarrow.png");
   background-repeat: no-repeat;
