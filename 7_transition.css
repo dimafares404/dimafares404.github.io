@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background: white;
@@ -8,14 +16,20 @@ body {
   position: fixed;         
   top: 0;
   left: 0;
-  width: 250px;
+  width: 150px;
   height: 100vh;
   background: black;
   padding-top: 0;
 }
 
+#menuItems button {
+  width: 150px;  
+}
+
 main {
-  margin-left: 250px;     
+  margin-left: 190px;
+  padding-left: 40px;
+  padding-right: 40px;
   min-height: 100vh;
 }
 
@@ -64,7 +78,7 @@ h1 {
   background: #d4a72c;     
   border: 1px solid black;
   display: none;  
-  width: 75%;
+  width: 150px;
 }
 
 #recentArticles:hover + #jumpMenu {
@@ -89,13 +103,14 @@ h1 {
 }
 
 #container {
-  width: 1100px;          
-  margin: 0 auto;           
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 60px;
   row-gap: 55px;
-  padding-bottom: 90px;     
+  padding: 0 30px 90px 30px;  
 }
 
 #container article {
