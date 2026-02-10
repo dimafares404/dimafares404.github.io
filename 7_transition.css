@@ -22,10 +22,6 @@ body {
   padding-top: 0;
 }
 
-#menuItems button {
-  width: 150px;  
-}
-
 main {
   margin-left: 190px;
   padding-left: 40px;
@@ -57,7 +53,7 @@ h1 {
 }
 
 #menuItems button {
-  width: 250px;
+  width: 150px;
   display: block;
   background: #001dff;
   color: white;
