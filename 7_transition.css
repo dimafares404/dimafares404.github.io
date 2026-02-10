@@ -86,12 +86,11 @@ h1 {
 }
 
 #container article {
-  display: flex;
-  flex-direction: column;
-  color: #b3b3b3;          
-  max-height: 300px;       
-  overflow: hidden;
-  padding-bottom: 30px;
+  position: relative;     
+  overflow: hidden;     
+  max-height: 260px;      
+  padding-bottom: 40px; 
+  color: #b3b3b3;
   transition: color 2s, max-height 2s;
 }
 
@@ -116,8 +115,9 @@ h1 {
 }
 
 #container article a[href*="google.com"] {
-  margin-top: auto;      
-  padding-top: 10px;       
+  position: absolute;
+  left: 0;
+  bottom: 10px;            
   display: inline-block;
 }
 
@@ -126,7 +126,7 @@ h1 {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-left: 6px;
+  margin-left: 8px;
   vertical-align: -2px;
   background-image: url("arrowarrow.png");
   background-repeat: no-repeat;
