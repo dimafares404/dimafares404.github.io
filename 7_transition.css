@@ -1,112 +1,76 @@
-* { 
-  box-sizing: border-box; 
-}
-
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-  padding: 16px;
+  font-family: Arial, sans-serif;
 }
 
 #menuItems {
-  position: relative;            
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  padding: 10px 12px;
-  background: #f3f3f3;
+  background-color: #f0f0f0;
+  padding: 10px;
 }
 
 #menuItems button {
-  border: 0;
-  padding: 10px 12px;
-  background: #e6e6e6;
+  background-color: #dddddd;
+  border: none;
+  padding: 10px;
   cursor: pointer;
-  transition: background-color 0.25s ease;
 }
 
 #menuItems button:hover {
-  background: #cfcfcf;
+  background-color: #bbbbbb;
 }
 
 #jumpMenu {
   display: none;
-  list-style: none;
+  list-style-type: none;
+  padding: 0;
   margin: 0;
-  padding: 8px 0;
-  position: absolute;
-  top: 48px;          
-  left: 12px;        
-  min-width: 160px;
-  background: #ffffff;
-  border: 1px solid #d6d6d6;
+  background-color: white;
+  border: 1px solid #ccc;
 }
 
-#recentArticles:hover + #jumpMenu,
-#jumpMenu:hover {
+#recentArticles:hover + #jumpMenu {
   display: block;
-}
-
-#jumpMenu li { 
-  margin: 0; 
 }
 
 #jumpMenu a {
   display: block;
-  padding: 8px 12px;
+  padding: 8px;
   text-decoration: none;
-  color: #333;
+  color: black;
 }
 
 #jumpMenu a:hover {
-  background: #2e2e2e;
-  color: #ffffff;
+  background-color: #333;
+  color: white;
 }
 
-#container {
-  display: grid;
-  gap: 14px;
-}
-
-#container article {
-  color: #9a9a9a;               
-  background: #fafafa;
-  border: 1px solid #e3e3e3;
-  border-radius: 6px;
-  padding: 12px 14px;
-  max-height: 120px;
+article {
+  color: #999999;               
+  background-color: #fafafa;
+  padding: 15px;
+  margin-bottom: 15px;
+  max-height: 120px;            
   overflow: hidden;
-  transition:
-    color 2s ease,
-    max-height 2s ease,
-    background-color 2s ease,
-    box-shadow 2s ease;
+  transition: color 2s, max-height 2s;
 }
 
-#container article:hover {
-  color: #2f2f2f;               
-  background: #ffffff;
-  max-height: 800px;            
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+article:hover {
+  color: #222222;       
+  max-height: 600px;           
 }
 
-#container article > p:first-of-type::first-letter {
+
+article p:first-of-type::first-letter {
   font-family: "Times New Roman", Times, serif;
   font-size: 36px;
-  line-height: 1;
 }
 
 a[href*="google.com"]::after {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   margin-left: 6px;
-  vertical-align: -2px;
   background-image: url("arrowarrow.png");
-  background-repeat: no-repeat;
   background-size: contain;
+  background-repeat: no-repeat;
 }
