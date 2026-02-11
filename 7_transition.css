@@ -13,13 +13,12 @@ body {
 }
 
 #menuItems {
-  position: fixed;         
+  position: fixed;
   top: 0;
   left: 0;
   width: 200px;
   height: 100vh;
   background: black;
-  padding-top: 0;
 }
 
 main {
@@ -40,7 +39,6 @@ header {
 header p {
   margin: 0;
   font-size: 40px;
-  font-family: Arial, sans-serif;
   color: black;
 }
 
@@ -64,16 +62,16 @@ h1 {
 }
 
 #menuItems button:hover {
-  background: #b8860b;  
+  background: #b8860b;
 }
 
 #jumpMenu {
   list-style: none;
   margin: 0 auto;
   padding: 10px 0;
-  background: #d4a72c;     
+  background: #d4a72c;
   border: 1px solid black;
-  display: none;  
+  display: none;
   width: 150px;
 }
 
@@ -89,7 +87,7 @@ h1 {
   display: block;
   padding: 2px 10px;
   text-decoration: none;
-  color: #001dff;          
+  color: #001dff;
   font-size: 18px;
 }
 
@@ -106,7 +104,7 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 60px;
   row-gap: 55px;
-  padding: 0 30px 90px 30px;  
+  padding: 0 30px 90px 30px;
 }
 
 #container article {
@@ -121,7 +119,7 @@ h1 {
 #container article:hover {
   color: #333;
   transform: scale(1.18);
-  z-index: 10;              
+  z-index: 10;
 }
 
 #container article h2 {
@@ -154,13 +152,11 @@ h1 {
   width: 14px;
   height: 14px;
   margin-left: 6px;
-  background-image: url("images/Link-external-small-ltr-progressive.svg");
+  background-image: url("images/arrowarrow.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
   vertical-align: text-bottom;
 }
-
 
 #thanks {
   position: fixed;
