@@ -148,12 +148,6 @@ h1 {
   font-size: 13px;
 }
 
-a[href*="google.com"]::after {
-  content: url("images/arrowarrow.png");
-  margin-left: 6px;
-  vertical-align: middle;
-}
-
 #container article p:last-of-type a::after {
   content: "";
   display: inline-block;
