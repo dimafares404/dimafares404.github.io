@@ -23,6 +23,7 @@ const el = {
 };
 
 let currentPokemon = null;
+let team = [];
 
 function setStatus(text){
   el.status.textContent = text || "";
