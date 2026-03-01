@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pokemon Team Builder</title>
+  <link rel="stylesheet" href="PokeAPI.css">
+</head>
+
+<body>
+  <div class="page-wrap">
+    <div class="panel">
+      <h2>Name or ID</h2>
+      <div class="search">
+        <input id="query" type="text">
+        <button id="findBtn">Find</button>
+      </div>
+      <img id="pokeImg" alt="">
+      <audio id="cry" controls></audio>
+      <div class="moves-grid">
+        <select id="m1"></select>
+        <select id="m3"></select>
+        <select id="m2"></select>
+        <select id="m4"></select>
+      </div>
+      <div class="add-wrap">
+        <button id="addBtn">Add to Team</button>
+      </div>
+      <div class="team-box">
+        <div id="teamLeft" class="team-left"></div>
+        <div id="teamRight" class="team-right"></div>
+      </div>
+      <div id="status" class="status"></div>
+      <div id="error" class="error"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
