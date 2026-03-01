@@ -101,9 +101,14 @@ select{
 
 .team-right{
   text-align:left;
-  padding:8px 14px;
+  padding:0;
   box-sizing:border-box;
   font-size:16px;
+}
+
+.team-left, .team-right{
+  display: grid;
+  grid-auto-rows: 70px;
 }
 
 .team-row{
@@ -132,7 +137,11 @@ select{
 
 .right-row{
   border-bottom:1px solid #333;
-  padding:8px 0;
+  height:70px;            
+  display:flex;           
+  align-items:center;
+  padding:0 14px;         
+  box-sizing:border-box;
 }
 
 .right-row:last-child{
