@@ -1,0 +1,154 @@
+body{
+  margin:0;
+  font-family: "Times New Roman", Times, serif;
+  background:#ffffff;
+}
+
+.page-wrap{
+  background:#bfe6f1;
+  padding:40px 0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+}
+
+.panel{
+  width:760px;
+  background:#fff;
+  border:6px solid #d7a21b;
+  border-radius:80px;
+  padding:40px 60px 28px;
+  box-sizing:border-box;
+  text-align:center;
+}
+
+h2{
+  margin:0 0 6px;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.search{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  align-items:center;
+  margin-bottom:18px;
+}
+
+input{
+  width:220px;
+  height:22px;
+  font-size:14px;
+  padding:2px 6px;
+  box-sizing:border-box;
+  border:1px solid #888;
+}
+
+button{
+  border:1px solid #888;
+  background:#efefef;
+  padding:3px 10px;
+  font-size:14px;
+  cursor:pointer;
+}
+
+#pokeImg{
+  width:240px;
+  height:240px;
+  object-fit:contain;
+  display:block;
+  margin:10px auto 10px;
+}
+
+#cry{
+  width:420px;
+  margin:6px auto 10px;
+  display:block;
+}
+
+.moves-grid{
+  width:520px;
+  margin:14px auto 10px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px 22px;
+}
+
+select{
+  width:100%;
+  height:22px;
+  border:1px solid #888;
+  font-size:14px;
+}
+
+.add-wrap{
+  margin:10px 0 12px;
+}
+
+.team-box{
+  width:560px;
+  margin:0 auto;
+  border:1px solid #333;
+  display:grid;
+  grid-template-columns: 140px 1fr;
+  min-height:120px;
+}
+
+.team-left{
+  border-right:1px solid #333;
+}
+
+.team-right{
+  text-align:left;
+  padding:8px 14px;
+  box-sizing:border-box;
+  font-size:16px;
+}
+
+.team-row{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:70px;
+  border-bottom:1px solid #333;
+}
+
+.team-row:last-child{
+  border-bottom:none;
+}
+
+.team-thumb{
+  width:52px;
+  height:52px;
+  object-fit:contain;
+}
+
+.moves-list{
+  margin:0;
+  padding-left:22px;
+  line-height:1.1;
+}
+
+.right-row{
+  border-bottom:1px solid #333;
+  padding:8px 0;
+}
+
+.right-row:last-child{
+  border-bottom:none;
+}
+
+.status{
+  font-family: Arial, sans-serif;
+  font-size:12px;
+  color:#555;
+  margin-top:10px;
+}
+
+.error{
+  font-family: Arial, sans-serif;
+  font-size:12px;
+  color:#b00020;
+  margin-top:6px;
+}
