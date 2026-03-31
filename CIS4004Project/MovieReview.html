@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieReview Theater</title>
+  <link rel="stylesheet" href="MovieReview.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <h1 class="logo">🎟 MovieReview Theater</h1>
+      <p class="tagline">Classic reviews. Cozy cinema vibes.</p>
+    </div>
+
+    <nav class="navbar">
+      <!-- These links jump to page sections -->
+      <a href="#home">Home</a>
+      <a href="#movies">Movies</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#watchlist">Watchlist</a>
+      <a href="#admin">Admin</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-overlay">
+      <h2>Welcome to the Theater</h2>
+      <p>
+        Discover films, read reviews, and save your favorites like a stack of vintage movie tickets.
+      </p>
+      <button id="scrollToMoviesBtn" class="primary-btn">Now Showing</button>
+    </div>
+  </section>
+  <section class="panel-section" id="login">
+    <div class="section-title-wrap">
+      <h2 class="section-title">Enter the Theater</h2>
+      <p class="section-subtitle">Login or register to continue</p>
+    </div>
+
+    <div class="form-card">
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username" />
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" />
+        <label for="roleSelect">Select Role (for demo)</label>
+        <select id="roleSelect">
+          <option value="user">Standard User</option>
+          <option value="admin">Admin</option>
+        </select>
+        <div class="form-button-row">
+          <button type="submit" class="primary-btn">Login</button>
+          <button type="button" id="registerBtn" class="secondary-btn">Register</button>
+        </div>
+        <p id="loginMessage" class="message-text"></p>
+      </form>
+    </div>
+  </section>
+  <section class="panel-section hidden" id="dashboard">
+    <div class="section-title-wrap">
+      <h2 class="section-title">Theater Dashboard</h2>
+      <p class="section-subtitle">Your front-row view of the app</p>
+    </div>
+    <div class="dashboard-card">
+      <h3 id="welcomeText">Welcome!</h3>
+      <p id="roleText">Role: Not logged in</p>
+      <div class="quick-actions">
+        <button class="primary-btn">Browse Movies</button>
+        <button class="secondary-btn">Write Review</button>
+        <button class="secondary-btn">Open Watchlist</button>
+      </div>
+    </div>
+  </section>
+  <section class="panel-section" id="movies">
+    <div class="section-title-wrap">
+      <h2 class="section-title">Now Showing</h2>
+      <p class="section-subtitle">Movie cards styled like classic theater tickets</p>
+    </div>
+    <div class="toolbar">
+      <input type="text" id="searchInput" placeholder="Search movies by title..." />
+      <select id="genreFilter">
+        <option value="all">All Genres</option>
+        <option value="Drama">Drama</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Romance">Romance</option>
+      </select>
+    </div>
+    <div class="movie-grid" id="movieGrid">
+      <article class="movie-ticket" data-title="moonlit letters" data-genre="Drama">
+        <div class="ticket-left">
+          <span class="ticket-stamp">ADMIT ONE</span>
+          <div class="poster-placeholder">🎬</div>
+        </div>
+        <div class="ticket-divider"></div>
+        <div class="ticket-right">
+          <p class="ticket-label">Now Reviewing</p>
+          <h3>Moonlit Letters</h3>
+          <p><strong>Genre:</strong> Drama</p>
+          <p><strong>Year:</strong> 2024</p>
+          <p><strong>Director:</strong> Ava Monroe</p>
+          <p><strong>Rating:</strong> 8.7 / 10</p>
+          <div class="ticket-button-row">
+            <button class="small-btn details-btn">View Details</button>
+            <button class="small-btn watchlist-btn">Add to Watchlist</button>
+          </div>
+        </div>
+      </article>
+      <article class="movie-ticket" data-title="golden velvet" data-genre="Romance">
+        <div class="ticket-left">
+          <span class="ticket-stamp">FEATURED</span>
+          <div class="poster-placeholder">🍿</div>
+        </div>
+        <div class="ticket-divider"></div>
+        <div class="ticket-right">
+          <p class="ticket-label">Classic Pick</p>
+          <h3>Golden Velvet</h3>
+          <p><strong>Genre:</strong> Romance</p>
+          <p><strong>Year:</strong> 2023</p>
+          <p><strong>Director:</strong> Elena Hart</p>
+          <p><strong>Rating:</strong> 9.1 / 10</p>
+          <div class="ticket-button-row">
+            <button class="small-btn details-btn">View Details</button>
+            <button class="small-btn watchlist-btn">Add to Watchlist</button>
+          </div>
+        </div>
+      </article>
+      <article class="movie-ticket" data-title="starlight corridor" data-genre="Sci-Fi">
+        <div class="ticket-left">
+          <span class="ticket-stamp">NOW SHOWING</span>
+          <div class="poster-placeholder">🌙</div>
+        </div>
+        <div class="ticket-divider"></div>
+        <div class="ticket-right">
+          <p class="ticket-label">Audience Favorite</p>
+          <h3>Starlight Corridor</h3>
+          <p><strong>Genre:</strong> Sci-Fi</p>
+          <p><strong>Year:</strong> 2025</p>
+          <p><strong>Director:</strong> Orion Wells</p>
+          <p><strong>Rating:</strong> 8.9 / 10</p>
+          <div class="ticket-button-row">
+            <button class="small-btn details-btn">View Details</button>
+            <button class="small-btn watchlist-btn">Add to Watchlist</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="movie-ticket" data-title="the velvet lantern" data-genre="Fantasy">
+        <div class="ticket-left">
+          <span class="ticket-stamp">PREMIERE</span>
+          <div class="poster-placeholder">✨</div>
+        </div>
+        <div class="ticket-divider"></div>
+        <div class="ticket-right">
+          <p class="ticket-label">Cozy Fantasy</p>
+          <h3>The Velvet Lantern</h3>
+          <p><strong>Genre:</strong> Fantasy</p>
+          <p><strong>Year:</strong> 2022</p>
+          <p><strong>Director:</strong> Clara Wren</p>
+          <p><strong>Rating:</strong> 8.3 / 10</p>
+          <div class="ticket-button-row">
+            <button class="small-btn details-btn">View Details</button>
+            <button class="small-btn watchlist-btn">Add to Watchlist</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel-section" id="movieDetails">
+    <div class="section-title-wrap">
+      <h2 class="section-title">Feature Presentation</h2>
+      <p class="section-subtitle">Selected movie information</p>
+    </div>
+
+    <div class="details-card">
+      <div class="details-poster">🎞</div>
+
+      <div class="details-info">
+        <h3 id="detailsTitle">Select a movie ticket</h3>
+        <p id="detailsGenre"><strong>Genre:</strong> --</p>
+        <p id="detailsYear"><strong>Year:</strong> --</p>
+        <p id="detailsDirector"><strong>Director:</strong> --</p>
+        <p id="detailsRating"><strong>Rating:</strong> --</p>
+
+        <div class="ticket-button-row">
+          <button class="primary-btn">Write Review</button>
+          <button class="secondary-btn">Save Ticket</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel-section" id="reviews">
+    <div class="section-title-wrap">
+      <h2 class="section-title">Audience Reviews</h2>
+      <p class="section-subtitle">Public reviews displayed like theater notes</p>
+    </div>
+
+    <div class="review-list">
+      <div class="review-card">
+        <h3>Moonlit Letters</h3>
+        <p><strong>Author:</strong> dima_user</p>
+        <p><strong>Rating:</strong> 9 / 10</p>
+        <p class="review-body">
+          Beautiful cinematography and a really warm emotional story. The ending felt classic and satisfying.
+        </p>
+      </div>
+
+      <div class="review-card">
+        <h3>Golden Velvet</h3>
+        <p><strong>Author:</strong> moviefan22</p>
+        <p><strong>Rating:</strong> 8 / 10</p>
+        <p class="review-body">
+          Stylish, romantic, and cozy. The soundtrack made it feel even more theatrical.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel-section" id="watchlist">
+    <div class="section-title-wrap">
+      <h2 class="section-title">Saved Tickets</h2>
+      <p class="section-subtitle">Your watchlist collection</p>
+    </div>
+
+    <div class="watchlist-tabs">
+      <button class="tab-btn active-tab" data-tab="want">Want to Watch</button>
+      <button class="tab-btn" data-tab="watched">Watched</button>
+    </div>
+
+    <div class="watchlist-content" id="watchlistContent">
+      <div class="watchlist-card">
+        <h3>Moonlit Letters</h3>
+        <p>Status: Want to Watch</p>
+      </div>
+      <div class="watchlist-card">
+        <h3>Starlight Corridor</h3>
+        <p>Status: Want to Watch</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel-section hidden" id="admin">
+    <div class="section-title-wrap">
+      <h2 class="section-title">Backstage Admin Panel</h2>
+      <p class="section-subtitle">Manage movies, genres, users, and reviews</p>
+    </div>
+
+    <div class="admin-grid">
+      <div class="admin-card">
+        <h3>Manage Movies</h3>
+        <p>Add, edit, or remove movie entries.</p>
+        <button class="small-btn">Open</button>
+      </div>
+
+      <div class="admin-card">
+        <h3>Manage Genres</h3>
+        <p>Create and update genre categories.</p>
+        <button class="small-btn">Open</button>
+      </div>
+
+      <div class="admin-card">
+        <h3>Manage Users</h3>
+        <p>View usernames, roles, and account creation dates.</p>
+        <button class="small-btn">Open</button>
+      </div>
+
+      <div class="admin-card">
+        <h3>Moderate Reviews</h3>
+        <p>Review or remove inappropriate submissions.</p>
+        <button class="small-btn">Open</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>MovieReview Theater • Classic Cinema UI Prototype</p>
+  </footer>
+  <script src="MovieReview.js"></script>
+</body>
+</html>
