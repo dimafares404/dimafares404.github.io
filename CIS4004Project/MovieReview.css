@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -15,28 +16,33 @@
   --shadow: rgba(0, 0, 0, 0.18);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--charcoal);
   color: var(--cream);
   line-height: 1.6;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Cinzel", serif;
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+}
+
+p, label, input, select, button, a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  display: none;
 }
 
 .site-header {
   background: linear-gradient(to right, var(--burgundy), var(--dark-brown));
   border-bottom: 3px solid var(--gold);
   padding: 20px 40px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,8 +67,8 @@ h3 {
 }
 
 .navbar a {
-  color: var(--light-cream);
   text-decoration: none;
+  color: var(--light-cream);
   font-weight: 600;
   transition: 0.3s ease;
 }
@@ -75,9 +81,7 @@ h3 {
   min-height: 55vh;
   background:
     linear-gradient(rgba(31, 26, 23, 0.5), rgba(31, 26, 23, 0.75)),
-    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1400&q=80")
-      center/cover no-repeat;
-
+    url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,11 +188,7 @@ h3 {
 
 .form-card,
 .dashboard-card,
-.details-card,
-.review-card,
-.watchlist-card,
-.admin-card,
-.empty-box {
+.details-card {
   background-color: rgba(246, 237, 220, 0.08);
   border: 2px solid var(--gold);
   border-radius: 20px;
@@ -201,7 +201,6 @@ h3 {
   margin: 0 auto;
 }
 
-/* Vertical form layout */
 form {
   display: flex;
   flex-direction: column;
@@ -296,7 +295,6 @@ select {
   width: 34%;
   background: linear-gradient(to bottom, var(--burgundy), var(--dark-brown));
   color: var(--light-cream);
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -319,7 +317,6 @@ select {
   font-size: 2.5rem;
 }
 
-/* Ticket tear line */
 .ticket-divider {
   width: 2px;
   background: repeating-linear-gradient(
@@ -331,7 +328,6 @@ select {
   );
 }
 
-/* Ticket right side */
 .ticket-right {
   flex: 1;
   padding: 18px;
@@ -381,6 +377,14 @@ select {
   gap: 20px;
 }
 
+.review-card {
+  background-color: rgba(246, 237, 220, 0.08);
+  border: 2px solid var(--gold);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 18px var(--shadow);
+}
+
 .review-card h3 {
   color: var(--gold);
   margin-bottom: 10px;
@@ -411,21 +415,29 @@ select {
   gap: 16px;
 }
 
+.watchlist-card {
+  background-color: rgba(246, 237, 220, 0.08);
+  border: 2px solid var(--gold);
+  border-radius: 16px;
+  padding: 18px;
+}
+
 .admin-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
+.admin-card {
+  background-color: rgba(246, 237, 220, 0.08);
+  border: 2px solid var(--gold);
+  border-radius: 18px;
+  padding: 20px;
+}
+
 .admin-card h3 {
   color: var(--gold);
   margin-bottom: 10px;
-}
-
-.empty-box {
-  text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
 }
 
 .site-footer {
